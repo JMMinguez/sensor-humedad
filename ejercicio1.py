@@ -13,7 +13,6 @@ import time
 #establecer pines
 d0_input = DigitalInputDevice(15)
 
-
 # Raspberry Pi pin setup
 lcd_rs = 25
 lcd_en = 24
@@ -30,7 +29,8 @@ lcd_rows = 2
 lcd = LCD.Adafruit_CharLCD(lcd_rs, lcd_en, lcd_d4, lcd_d5, lcd_d6, lcd_d7, lcd_columns, lcd_rows, lcd_backlight)
 
 lcd.clear()
-for i in range(10):
+
+while True:
     if (not d0_input.value):
         lcd.message('Dame más agua :(')
         print (d0_input.value)
