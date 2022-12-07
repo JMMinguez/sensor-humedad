@@ -30,13 +30,15 @@ lcd_rows = 2
 lcd = LCD.Adafruit_CharLCD(lcd_rs, lcd_en, lcd_d4, lcd_d5, lcd_d6, lcd_d7, lcd_columns, lcd_rows, lcd_backlight)
 
 lcd.clear()
-while True:
+for i in range(10):
     if (not d0_input.value):
         lcd.message('Dame más agua :(')
+        print (d0_input.value)
         time.sleep(2)
         lcd.clear()
     else:
         lcd.message('Me ahogo :)')
+        print (d0_input.value)
         time.sleep(2)
         lcd.clear()
 		
