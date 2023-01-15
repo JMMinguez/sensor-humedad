@@ -1,8 +1,8 @@
 # P7-Humedad
-##Introducción
+## Introducción
 La finalidad de esta práctica es implementar un programa que sea capaz de mostrar al usuario el estado de una planta de forma práctica y sin complicaciones. 
 
-##Componentes
+## Componentes
 Para realizar esta práctica, hemos utilizado el sensor de humedad de suelo que viene junto con un módulo comparador modelo [LM393](https://github.com/clases-julio/p7-humedad-rsanchez2021/blob/main/lm393-datasheet.pdf). En total, hemos uilizado:
 - Sensor de humedad
 - Módulo comparador
